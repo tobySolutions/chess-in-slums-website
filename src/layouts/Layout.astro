@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer/Footer.tsx";
 import Header from "../components/Header/Header.astro";
 ---
 
@@ -15,15 +16,9 @@ import Header from "../components/Header/Header.astro";
 	 <main>
 		<Header/>
 		 <slot />
+		<Footer client:visible />
 	 </main>
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+

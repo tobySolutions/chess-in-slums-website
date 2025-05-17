@@ -1,0 +1,27 @@
+---
+
+import ImageCarousel from "../components/ImageCarousel"
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+
+const carouselImages = [
+    "/images/tunde-in-native.jpg",
+    "/images/tunde-bus.jpg",
+    "/images/tunde-selfie.jpg",
+    "/images/tunde-street-play.jpg",
+    "/images/tunde-nigerian-flag.jpg"
+  ];
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+<Layout>
+  <div class="px-4">
+    <ImageCarousel 
+    client:load
+          images={carouselImages} 
+          speed={5} 
+          className="h-[600px] w-[30%]"
+    />
+  </div>
+</Layout>

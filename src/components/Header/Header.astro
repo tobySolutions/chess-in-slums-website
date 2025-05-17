@@ -1,34 +1,35 @@
 ---
 import Diamond from "../ui/icons/diamond.astro";
+import BackgroundCurve from "../ui/icons/background-curve.astro";
 ---
 
-<header>
-<nav>
-<ul class="flex items-center justify-between">
-    <li>
-        <p class="flex font-medium font-mabry gap-2 items-center">
-            <Diamond/>
-            CREDITS
-        </p>
-    </li>
-    <li>
-        <div>
-            <div>
-                <h1>T.O</h1>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <p class="flex font-medium font-mabry gap-2 items-center">
-            <Diamond/>
-            REACH OUT
-        </p>
-    </li>
-</ul>
-</nav>
+<header class="h-[93px]  flex items-center ">
+    <ul class="flex items-center relative justify-between w-[80%] mx-auto">
+
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0 -translate-x-4">
+            <BackgroundCurve/>
+          </div>
+
+          
+        <li>
+            <p class="flex font-medium font-mabry gap-1 items-center">
+                <Diamond/>
+                CREDITS
+            </p>
+        </li>
+        <li class="relative z-10 overflow-hidden ">
+            <h1 class="text-4xl text-offwhite">T.O</h1>
+
+
+        
+
+           
+          </li>
+        <li>
+            <p class="flex font-medium font-mabry gap-1 items-center">
+                <Diamond/>
+                REACH OUT
+            </p>
+        </li>
+    </ul>
 </header>
