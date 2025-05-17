@@ -7,11 +7,11 @@ interface Props {
 export const ImageCard = ({image, text}: Props) => {
   return (
     <div className="w-[194px] p-2">
-      <div>
-        <img src={image}/>
+      <div className="h-[192px] w-full ">
+        <img src={image} className="w-full h-full object-cover" />
       </div>
       <div>
-        {text}
+       <p className=" font-">{text}</p> 
       </div>
     </div>
   )
