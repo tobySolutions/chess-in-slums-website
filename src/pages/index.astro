@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {Heading} from "../components/ui/heading";
+import {Container} from "../components/ui/container";
 import "../styles/global.css";
-import Heading from "../components/ui/Heading.tsx";
 
 
-// const carouselImages = [
+// const carouselImages = [s
 //     "/images/tunde-in-native.jpg",
 //     "/images/tunde-bus.jpg",
 //     "/images/tunde-selfie.jpg",
@@ -16,7 +17,9 @@ import Heading from "../components/ui/Heading.tsx";
 
 
 <Layout>
+	<Container>
+		<Heading client:visible>BIOGRAPHY</Heading>
+	</Container>
 	<!-- <ImageCard image='/images/tunde-bus.jpg' text='Biography'/> -->
-
 
 </Layout>
