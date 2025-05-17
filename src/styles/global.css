@@ -12,9 +12,7 @@
   --font-mabry: "Mabry Pro", "sans-serif";
   --font-seaweed: "Seaweed Script", cursive;
   --shadow-card: 0px 3.55px 25.79px 0px #0000002e;
-  --color-border-
 }
-
 
 @font-face {
   font-family: "Mabry Pro";
@@ -160,4 +158,9 @@
   background: white;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
   translate: 0px 40px;
+}
+
+body {
+  font-family: var(--font-mabry);
+  background-color: var(--color-white-bg);
 }
